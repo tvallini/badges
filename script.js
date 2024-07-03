@@ -90,6 +90,10 @@ function renderBadgesEarned() {
         statusElement.textContent = badge.status;
         card.appendChild(statusElement);
 
+        const isPrimaryElement = document.createElement('p');
+        statusElement.textContent = badge.isPrimary;
+        card.appendChild(isPrimaryElement);
+
         const buttonElement = document.createElement('button');
         buttonElement.textContent = badge.button;
         buttonElement.onclick = () => {
