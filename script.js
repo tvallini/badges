@@ -91,7 +91,7 @@ function renderBadgesEarned() {
         card.appendChild(statusElement);
 
         const isPrimaryElement = document.createElement('p');
-        statusElement.textContent = badge.isPrimary;
+        isPrimaryElement.textContent = 'isPrimary: ' + badge.isPrimary;
         card.appendChild(isPrimaryElement);
 
         const buttonElement = document.createElement('button');
